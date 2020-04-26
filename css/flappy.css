@@ -15,3 +15,23 @@ body {
   align-items: center;
   min-height: 100%;
 }
+
+/* Style game */
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face{
+  font-family: "Pixel";
+  src: url('../fonts/Pixel.ttf');
+}
+
+[tp-flappy]{
+  position: relative;
+  border: 5px solid dodgerblue;
+  height: 700px;
+  width: 1200px;
+  bacground-color: deepskyblue;
+  overflow: hidden;
+}
