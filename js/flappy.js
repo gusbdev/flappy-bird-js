@@ -32,17 +32,19 @@ function createPairBarrier(height, opening, position){
 
 	this.randomOpening = () => {
 		const heightHigher = Math.random() * (height - opening);
+
 		const heightBottom = height - opening - heightHigher;
 
 		this.higher.setHeight(heightHigher);
+
 		this.bottom.setHeight(heightBottom);
 	}
 
-	this.getPosition = () => parent(this.element.style.left.split('px'));
+	this.getPosition = () => parseInt(this.element.style.left.split('px')[0]);
 
 	this.setPosition = position => this.element.style.left = `${position}px`;
 
-	this.getWidth = () => this.element.clientWidt;
+	this.getWidth = () => this.element.clientWidth;
 
 	this.randomOpening();
 	this.setPosition(position);
