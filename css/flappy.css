@@ -23,7 +23,7 @@ body {
 }
 
 @font-face {
-  font-family: "Pixel";
+  font-family: 'Pixel';
   src: url('../fonts/Pixel.ttf');
 }
 
@@ -32,7 +32,7 @@ body {
   border: 5px solid dodgerblue;
   height: 700px;
   width: 1200px;
-  bacground-color: deepskyblue;
+  background-color: deepskyblue;
   overflow: hidden;
 }
 
